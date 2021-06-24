@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="favicon" href="imgs/favicon.ico" type="image/x-icon">
+    <title>Beira Linha: Administração</title>
+</head>
+
+<body>
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <h1 class="adm">Beira Linha: Administração do site</h1>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+
+
+        <!-- Notícias -->
+
+        <!-- <form action="imgs/galeria" method="POST"> -->
+        <form action="imgs/galeria" enctype=multipart/form-data method="POST" onsubmit="uploadFile()">
+            <div class="container-fluid" id="box-noticias">
+                <div class="row">
+                    <div class="col-md-3"><span class="box-titulo">Notícias</span></div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="tituloNoticia">Título da Notícia</label>
+                                    <input type="text" class="form-control" id="tituloNoticia">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="textoNoticia">Texto</label>
+                                    <textarea class="form-control" id="textoNoticia" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="imgNoticia">Imagem</label>
+                                    <input type="file" class="form-control-file" id="imgNoticia" name="imgNoticia">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" onclick="uploadFile(imgNoticia)" class="btn btn-info"
+                                name="submit">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Depoimentos -->
+
+        <form class="form-depoimentos" action="">
+            <div class="container-fluid" id="box-depoimentos">
+                <div class="row">
+                    <div class="col-md-3"><span class="box-titulo">Depoimentos</span></div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="tituloDepoimento">Título</label>
+                                    <input type="text" class="form-control" id="tituloDepoimento">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="textoDepoimento">Texto</label>
+                                    <textarea class="form-control" id="textoDepoimento" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="imgDepoimento">Imagem</label>
+                                    <input type="file" class="form-control-file" id="imgDepoimento">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-info">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Fotos -->
+
+
+        <form class="form-fotos" action="">
+            <div class="container-fluid" id="box-fotos">
+                <div class="row">
+                    <div class="col-md-3"><span class="box-titulo">Fotos</span></div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="tituloFotos">Título</label>
+                                    <input type="text" class="form-control" id="tituloFotos">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="legendaFoto">Legenda</label>
+                                    <input type="text" class="form-control" id="legendaFotos">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="imgFotos">Imagem</label>
+                                    <input type="file" class="form-control-file" id="imgFotos">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-info">Publicar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Oficinas -->
+
+
+        <form class="form-depoimentos" action="">
+            <div class="container-fluid" id="box-oficinas">
+                <div class="row">
+                    <div class="col-md-3">
+                        <span class="box-titulo">Oficinas</span><br>
+
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="nomeOficina">Nome da Oficina</label>
+                                    <input type="text" class="form-control" id="nomeOficina">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="infoOficina">Informações</label>
+                                    <textarea class="form-control" id="infoOficina" rows="3"></textarea>
+                                </div>
+                                <label for="horarioOficina">Horário</label>
+                                <input type="text" class="form-control" id="horarioOficina">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label for="imgOficina">Imagem</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-info">Publicar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Usuários -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3"><span class="box-titulo"> Usuários Cadastrados</span></div>
+                <div class="col-md-9">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome Completo</th>
+                                <th scope="col">Usuário</th>
+                                <th scope="col">E-mail</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-usuarios">
+
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#loginModal">Novo
+                            usuario</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="login.js"></script>
+        <script src="adm.js"></script>
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login App</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="login-box" class="col-md-12">
+                            <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                                <h3 class="text-center text-info">Novo usuário</h3>
+                                <div class="form-group">
+                                    <label for="login" class="text-info">Usuário</label><br>
+                                    <input type="text" name="txt_login" id="txt_login" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nome" class="text-info">Nome completo</label><br>
+                                    <input type="text" name="txt_nome" id="txt_nome" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="text-info">email</label><br>
+                                    <input type="text" name="txt_email" id="txt_email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="senha" class="text-info">Senha</label><br>
+                                    <input type="password" name="txt_senha" id="txt_senha" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="senha2" class="text-info">Confirmação de Senha</label><br>
+                                    <input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" id="btn_salvar" class="btn btn-info">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <button class="btn btn-info" id="btn_logout" onclick="logoutUser()">Sair</button>
+
+
+    <p></p>
+    <script src="adm.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <p></p>
+
+
+</body>
+
+</html>
