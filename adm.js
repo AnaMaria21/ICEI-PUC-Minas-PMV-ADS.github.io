@@ -19,15 +19,13 @@ function listUser() {
 }
 
 function uploadFile() {
-    alert("teste");
     const formData = new FormData();
     const fileField = document.querySelector('input[type="file"]');
 
-    formData.append('username', 'abc123');
     formData.append('avatar', fileField.files[0]);
 
     fetch('https://icei-puc-minas-pmv-ads.github.io/imgs/galeria', {
-        method: 'Post',
+        method: 'PUT',
         body: formData
     })
         .then(response => response.json())
