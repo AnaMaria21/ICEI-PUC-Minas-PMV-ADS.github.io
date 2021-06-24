@@ -26,7 +26,7 @@ function uploadFile() {
     formData.append('username', 'abc123');
     formData.append('avatar', fileField.files[0]);
 
-    fetch('imgs/galeria', {
+    fetch('https://icei-puc-minas-pmv-ads.github.io/imgs/galeria', {
         method: 'Post',
         body: formData
     })
