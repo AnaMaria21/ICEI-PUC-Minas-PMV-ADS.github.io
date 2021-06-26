@@ -122,121 +122,134 @@
     </main>
     </div>
 
-        <!-- TESTE GALERIA INÍCIO -->
+    <!--  GALERIA INÍCIO -->
+    <div class="galeria">
+        <h2>Galeria de Fotos</h2>
+        <div class="row">
+            <div class="column">
+                <img src="imgs/galeria/img_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="imgs/galeria/img_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="imgs/galeria/img_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="imgs/galeria/img_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
 
-        <div class="photo-album " id="galeria">
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
 
-        <h1><span> Galeria de Fotos</span></h1>
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="imgs/galeria/img_1.jpg" style="width:100%">
+                </div>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=0 " class="large polaroid img1 "><img
-                src="https://source.unsplash.com/random/250x250?sig=0 " alt=" ">Lorem, ipsum.</a>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="imgs/galeria/img_2.jpg" style="width:100%">
+                </div>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=1 " class="polaroid img2 "><img
-                src="https://source.unsplash.com/random/250x250?sig=1 " alt=" ">Lorem, ipsum dolor.</a>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="imgs/galeria/img_3.jpg" style="width:100%">
+                </div>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=2 " class="small polaroid img3 "><img
-                src="https://source.unsplash.com/random/250x250?sig=2 " alt=" ">Lorem ipsum dolor sit amet.</a>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="imgs/galeria/img_4.jpg" style="width:100%">
+                </div>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=3 " class="medium polaroid img4 "><img
-                src="https://source.unsplash.com/random/250x250?sig=3 " alt=" ">Lorem ipsum dolor sit.</a>
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=4 " class="polaroid img5 "><img
-                src="https://source.unsplash.com/random/250x250?sig=4 " alt=" ">Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Numquam, ullam!</a>
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=5 " class="polaroid img6 "><img
-                src="https://source.unsplash.com/random/250x250?sig=5 " alt=" ">Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Accusantium laborum quia rerum.</a>
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="imgs/galeria/img_1.jpg" onclick="currentSlide(1)" alt="Nature">
+                </div>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=6 " class="polaroid img7 "><img
-                src="https://source.unsplash.com/random/250x250?sig=6 " alt=" ">Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit.</a>
+                <div class="column">
+                    <img class="demo" src="imgs/galeria/img_2.jpg" onclick="currentSlide(2)" alt="Snow">
+                </div>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=7 " class="small polaroid img8 "><img
-                src="https://source.unsplash.com/random/250x250?sig=7 " alt=" ">Lorem ipsum dolor sit amet.</a>
+                <div class="column">
+                    <img class="demo" src="imgs/galeria/img_3.jpg" onclick="currentSlide(3)" alt="Mountains">
+                </div>
 
-        <a href="https://source.unsplash.com/random/250x250?sig=8 " class="medium polaroid img9 "><img
-                src="https://source.unsplash.com/random/250x250?sig=8 " alt=" ">Lorem ipsum dolor sit amet
-            consectetur.</a>
+                <div class="column">
+                    <img class="demo" src="imgs/galeria/img_4.jpg" onclick="currentSlide(4)" alt="Lights">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  GALERIA FIM -->
 
-        <a href="http://www.flickr.com/photos/nataliedowne/2306995686/in/set-72157604033893095/ "
-            class="polaroid img10 "><img src="https://source.unsplash.com/random/250x250?sig=9 " alt=" ">Lorem ipsum
-            dolor sit, amet consectetur adipisicing elit. Reprehenderit vel eveniet exercitationem!</a>
-
-        <a href="https://source.unsplash.com/random/250x250?sig=9 " class="small polaroid img11 "><img
-                src="https://source.unsplash.com/random/250x250?sig=10 " alt=" ">Lorem ipsum dolor sit.</a>
-
-        <a href="https://source.unsplash.com/random/250x250?sig=0 " class="small polaroid img12 "><img
-                src="https://source.unsplash.com/random/250x250?sig=11 " alt=" ">Lorem ipsum dolor sit amet.</a>
-
-        <a href="https://source.unsplash.com/random/250x250?sig=0 " class="small polaroid img13 "><img
-                src="https://source.unsplash.com/random/250x250?sig=12 " alt=" ">Lorem, ipsum dolor sit amet consectetur
-            adipisicing.</a>
-
-        <a href="https://source.unsplash.com/random/250x250?sig=0 " class="small polaroid img14 "><img
-                src="https://source.unsplash.com/random/250x250?sig=13 " alt=" ">Lorem ipsum dolor sit amet
-            consectetur.</a>
-
-        <a href="https://source.unsplash.com/random/250x250?sig=0 " class="polaroid img15 "><img
-                src="https://source.unsplash.com/random/250x250?sig=14 " alt=" ">Lorem ipsum dolor sit.</a>
+    <div class="noticias">
+        <h2>Notícias</h2>
+        <h3></h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus autem harum cumque distinctio repellat
+            praesentium asperiores laboriosam voluptate! Corrupti aspernatur laudantium corporis, placeat magnam
+            harum?
+        </p>
+        <h3></h3>
+        <p>Voluptatibus odio neque at eius qui unde dicta nostrum debitis, eveniet, error quisquam dolorem enim.
+            Obcaecati eaque nemo veniam, at a nesciunt ea esse. Eius.</p>
+        <h3></h3>
+        <p>Odit voluptate ad aspernatur quidem, nulla minus ipsa minima veritatis? Officiis eos nulla delectus eum
+            eaque. Esse reiciendis nemo quod iste repellendus odio iure corrupti.</p>
+        <h3></h3>
+        <p>Numquam pariatur voluptas et saepe odit eius corrupti! Culpa ipsam consectetur recusandae earum dicta,
+            deleniti nemo consequatur cupiditate, amet officiis aut doloribus! Voluptatum, laudantium voluptate!</p>
+        <h3></h3>
+        <p>Eligendi molestias atque ut, pariatur quibusdam dolorum officiis? Quibusdam necessitatibus autem illo
+            sint
+            eveniet impedit earum aliquam repudiandae recusandae iusto maiores, iure suscipit velit repellendus!</p>
 
     </div>
 
-        <!-- TESTE GALERIA FIM -->
+    <div class="contato">
+        <h3>Fale conosco</h3>
+        <img src="imgs/contato.png" alt="">
+        <form class="contato-form" action="">
+            <input class="contato-form" placeholder="Nome" type="text" name="nome" id="nome" size="50"><br>
+            <input class="contato-form" placeholder="E-mail" type="email" size="50"><br>
+            <input class="contato-form" placeholder="Telefone" type="tel" name="tel" id="tel" size="50"><br>
+            <textarea class="contato-form" placeholder="Deixe sua mensagem" rows="10" cols="52" name="mensagem"
+                id="mensagem"></textarea><br>
+            <input class="contato-form" type="submit" value="Enviar">
+        </form>
 
-        <div class="noticias">
-            <h2>Notícias</h2>
-            <h3></h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus autem harum cumque distinctio repellat
-                praesentium asperiores laboriosam voluptate! Corrupti aspernatur laudantium corporis, placeat magnam
-                harum?
-            </p>
-            <h3></h3>
-            <p>Voluptatibus odio neque at eius qui unde dicta nostrum debitis, eveniet, error quisquam dolorem enim.
-                Obcaecati eaque nemo veniam, at a nesciunt ea esse. Eius.</p>
-            <h3></h3>
-            <p>Odit voluptate ad aspernatur quidem, nulla minus ipsa minima veritatis? Officiis eos nulla delectus eum
-                eaque. Esse reiciendis nemo quod iste repellendus odio iure corrupti.</p>
-            <h3></h3>
-            <p>Numquam pariatur voluptas et saepe odit eius corrupti! Culpa ipsam consectetur recusandae earum dicta,
-                deleniti nemo consequatur cupiditate, amet officiis aut doloribus! Voluptatum, laudantium voluptate!</p>
-            <h3></h3>
-            <p>Eligendi molestias atque ut, pariatur quibusdam dolorum officiis? Quibusdam necessitatibus autem illo
-                sint
-                eveniet impedit earum aliquam repudiandae recusandae iusto maiores, iure suscipit velit repellendus!</p>
-
-        </div>
-
-        <div class="contato">
-            <h3>Fale conosco</h3>
-            <img src="imgs/contato.png" alt="">
-            <form class="contato-form" action="">
-                <input class="contato-form" placeholder="Nome" type="text" name="nome" id="nome" size="50"><br>
-                <input class="contato-form" placeholder="E-mail" type="email" size="50"><br>
-                <input class="contato-form" placeholder="Telefone" type="tel" name="tel" id="tel" size="50"><br>
-                <textarea class="contato-form" placeholder="Deixe sua mensagem" rows="10" cols="52" name="mensagem"
-                    id="mensagem"></textarea><br>
-                <input class="contato-form" type="submit" value="Enviar">
-            </form>
-
-        </div>
-        <footer>
-            <ul>
-                <li>
-                    <a href="http://www.facebook.com"><img src="imgs/facebook-512.png" alt=""></a>
-                </li>
-                <li>
-                    <a href=""><img src="imgs/icon-whatsApp.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="http://www.twitter.com"><img src="imgs/twitter-squared.png" alt=""></a>
-                </li>
-                <li>
-                    <a href="http://www.instagram.com"><img src="imgs/instagram-new.png" alt=""></a>
-                </li>
-            </ul>
-            <p>Todos os direitos reservados</p>
-        </footer>
+    </div>
+    <script src="galeria.js"></script>
+    <footer>
+        <ul>
+            <li>
+                <a href="http://www.facebook.com"><img src="imgs/facebook-512.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="imgs/icon-whatsApp.png" alt=""></a>
+            </li>
+            <li>
+                <a href="http://www.twitter.com"><img src="imgs/twitter-squared.png" alt=""></a>
+            </li>
+            <li>
+                <a href="http://www.instagram.com"><img src="imgs/instagram-new.png" alt=""></a>
+            </li>
+        </ul>
+        <p>Todos os direitos reservados</p>
+    </footer>
 </body>
 
 

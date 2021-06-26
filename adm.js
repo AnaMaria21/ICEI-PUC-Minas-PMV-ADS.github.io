@@ -15,24 +15,18 @@ function listUser() {
                 <td>${usuario.login}</td>
                 <td>${usuario.email}</td>
             </tr>`       
+        // return true;
     }      
 }
 
 function uploadFile() {
     const formData = new FormData();
     const fileField = document.querySelector('input[type="file"]');
+    var imgNoticia = document.getElementById('imgNoticia');
 
-    formData.append('avatar', fileField.files[0]);
+    formData.append('imgNoticia', fileField.files[0],imgNoticia);
 
-    fetch('https://icei-puc-minas-pmv-ads.github.io/imgs/galeria', {
-        method: 'PUT',
-        body: formData
-    })
-        .then(response => response.json())
-        .then(result => {
-            console.log('Success:', result);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        })
+    var request = new XMLHttpRequest();
+    request.open("POST", "imgs/galeria");
+    request.send(formData);
 }
