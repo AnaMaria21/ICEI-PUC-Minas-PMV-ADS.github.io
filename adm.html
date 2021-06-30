@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
     <link rel="favicon" href="imgs/favicon.ico" type="image/x-icon">
+
     <title>Beira Linha: Administração</title>
 </head>
 
@@ -23,44 +25,6 @@
                 <div class="col-md-3"></div>
             </div>
         </div>
-
-
-        <!-- Notícias -->
-
-        <form action="imgs/galeria" method="post" enctype="multipart/form-data">
-            <div class="container-fluid" id="box-noticias">
-                <div class="row">
-                    <div class="col-md-3"><span class="box-titulo">Notícias</span></div>
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <label for="tituloNoticia">Título da Notícia</label>
-                                    <input type="text" class="form-control" id="tituloNoticia">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="textoNoticia">Texto</label>
-                                    <textarea class="form-control" id="textoNoticia" rows="3"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="form-group">
-                                    <label for="imgNoticia">Imagem</label>
-                                    <input type="file" class="form-control-file" id="imgNoticia" name="imgNoticia">
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="row">
-                            <input type="submit" value="Upload" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
 
         <!-- Depoimentos -->
 
@@ -181,6 +145,7 @@
 
         <!-- Usuários -->
 
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3"><span class="box-titulo"> Usuários Cadastrados</span></div>
@@ -259,6 +224,7 @@
     <p></p>
     <p></p>
     <p></p>
+
     <button class="btn btn-info" id="btn_logout" onclick="logoutUser()">Sair</button>
 
 

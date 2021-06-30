@@ -51,7 +51,7 @@ nav>ul {
     background-color: rgb(85, 152, 210);
     background-size: 885px;
     margin-top: 63px;
-    padding: 50px 20px;
+    padding: 70px 60px;
 }
 
 .historia p {
@@ -61,7 +61,7 @@ nav>ul {
 }
 
 .motivo {
-    display: grid;
+    display: inline;
     grid-template-columns: 30% 1fr;
     grid-template-rows: 50% 50%;
     grid-template-areas: "titulo motivo" "titulo motivo";
@@ -71,7 +71,8 @@ nav>ul {
     list-style-type: none;
 }
 
-.motivo>h2 {
+
+/* .motivo>h2 {
     grid-area: titulo;
     padding: 40px;
     margin: auto;
@@ -79,16 +80,30 @@ nav>ul {
     font-size: xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
+} */
+
+.motivo>h2 {
+    padding: 45px;
+    margin: auto;
+    font-size: 45px;
+    text-transform: none;
+    color: #454545;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
 }
 
 .motivo-item {
     grid-area: motivo;
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 40px;
+    padding: 30px;
 }
 
 div ul li img {
-    display: block;
+    display: inline-block;
     margin-bottom: 5px;
 }
 
@@ -138,6 +153,19 @@ div h1 {
     grid-template-rows: 50% 50%;
     grid-template-areas: "titulo cur1 . cur2" "titulo cur3 . cur4";
     margin-right: 1px;
+    align-items: center
+}
+
+.curiosidades>h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-right: 30px;
+    padding-left: 15px;
 }
 
 .curiosidades>h3 {
@@ -150,7 +178,7 @@ div h1 {
     font-size: large;
     padding-top: 100px;
     padding-bottom: 50px;
-    margin-right: 200px;
+    margin-right: 70px
 }
 
 #cur_titulo {
@@ -199,8 +227,8 @@ div.container h2 {
     color: rgb(56 127 187);
 }
 
-#oficina {
-    text-align: left;
+/* #oficina {
+    text-align: center;
 }
 
 .box-oficina {
@@ -232,6 +260,77 @@ div.container h2 {
     box-shadow: 4px 4px 10px;
     text-decoration: none;
     color: gray;
+
+} */
+
+.carousel-item.active {
+    display: flex !important;
+    justify-content: center;
+}
+
+.carousel-indicators {
+    bottom: -25px !important;
+}
+
+.carousel-indicators li {
+    background-color: cornflowerblue !important;
+}
+
+.carousel-control-prev-icon {
+    background-color: cornflowerblue !important;
+}
+
+.carousel-control-next-icon {
+    background-color: cornflowerblue !important;
+}
+
+.carousel-inner>h2 {
+    padding: 20px;
+    margin: auto;
+    font-size: 45px;
+    text-transform: none;
+    color: #454545;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+}
+
+.depoimento>h2 {
+    padding: 30px;
+    margin: auto;
+    font-size: 45px;
+    text-transform: none;
+    color: #454545;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+}
+
+.noticias>h2 {
+    padding: 50px;
+    margin: auto;
+    font-size: 45px;
+    text-transform: none;
+    color: #454545;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+}
+
+.card {
+    align-items: center;
+}
+
+.card-img-top {
+    width: 50% !important;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
 }
 
 .depoimento {
@@ -328,7 +427,6 @@ footer p {
 }
 
 /* galeria início */
-
 .galeria {
     width: 100%;
     padding-bottom: 30px;
@@ -472,3 +570,20 @@ footer p {
   }
 
 /* galeria fim */
+
+
+footer p {
+    font-style: normal;
+    font-size: 1em;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+    color: #666;
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: initial;
+    text-align: center;
+}

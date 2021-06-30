@@ -1,7 +1,9 @@
 
+
 document.getElementById("tabela-usuarios").onload=listUser();
 
 function listUser() {
+    window.stop();
     var tabUser = document.getElementById("tabela-usuarios");
     var db_usuarios = JSON.parse(localStorage.getItem("db_usuarios"));
     for (var i = 0; i < db_usuarios.usuarios.length; i++) {
@@ -15,7 +17,6 @@ function listUser() {
                 <td>${usuario.login}</td>
                 <td>${usuario.email}</td>
             </tr>`       
-        // return true;
     }      
 }
 
