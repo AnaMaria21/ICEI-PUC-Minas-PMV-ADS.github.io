@@ -55,9 +55,12 @@ nav>ul {
 }
 
 .historia p {
-    width: 700px;
+    width: 900px;
     text-align: justify;
     line-height: 1.35;
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
 }
 
 .motivo {
@@ -70,17 +73,6 @@ nav>ul {
 .motivo>ul {
     list-style-type: none;
 }
-
-
-/* .motivo>h2 {
-    grid-area: titulo;
-    padding: 40px;
-    margin: auto;
-    text-align: center;
-    font-size: xx-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: lighter;
-} */
 
 .motivo>h2 {
     padding: 45px;
@@ -227,45 +219,10 @@ div.container h2 {
     color: rgb(56 127 187);
 }
 
-/* #oficina {
-    text-align: center;
-}
-
-.box-oficina {
-    text-align: center;
-    border-color: rgb(202, 200, 200);
-    display: inline-block;
-    width: calc(33% - 122px);
-    padding: 10px 10px 30px;
-    margin: 0 50px 10px;
-    border: 1px;
-    border-style: solid;
-    vertical-align: middle;
-    box-shadow: 8px 8px 15px gray;
-}
-
-.box-oficina img {
-    padding: 30px 0px 30px;
-}
-
-.box-oficina:hover {
-    transform: scale(1.1);
-    font-weight: 100;
-    background-color: rgb(228, 227, 227);
-}
-
-.box-oficina a {
-    padding: 10px;
-    background-color: lightgrey;
-    box-shadow: 4px 4px 10px;
-    text-decoration: none;
-    color: gray;
-
-} */
-
 .carousel-item.active {
     display: flex !important;
     justify-content: center;
+    transition: 0.01s !important;
 }
 
 .carousel-indicators {
@@ -282,6 +239,7 @@ div.container h2 {
 
 .carousel-control-next-icon {
     background-color: cornflowerblue !important;
+    
 }
 
 .carousel-inner>h2 {
@@ -325,6 +283,8 @@ div.container h2 {
 
 .card {
     align-items: center;
+    margin: 10px;
+
 }
 
 .card-img-top {
@@ -431,7 +391,31 @@ footer p {
     width: 100%;
     padding-bottom: 30px;
 }
+.galeria>h2{
+    padding: 50px;
+    margin: auto;
+    font-size: 45px;
+    text-transform: none;
+    color: #454545;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+}
 
+.oficina>h2 {
+    padding: 50px;
+    margin: auto;
+    font-size: 45px;
+    text-transform: none;
+    color: #454545;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+}
 
 .row > .column {
     padding: 0px;
@@ -447,14 +431,18 @@ footer p {
   /* Create four equal columns that floats next to eachother */
   .column {
     float: left;
-    width: 25%;
+    width: 16.5%;
   }
 
   .column img {
       width: 100%;
-      padding: 0px;
+      padding: 2px;
       margin: 0px;
-      border: 0px;
+
+      border-radius: 10px;
+      max-height: 200px;
+      object-fit: scale-down;
+      
   }
   
   /* The Modal (background) */
@@ -563,6 +551,7 @@ footer p {
   
   img.hover-shadow {
     transition: 0.3s;
+
   }
   
   .hover-shadow:hover {
