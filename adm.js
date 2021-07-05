@@ -9,7 +9,6 @@ function listUser() {
     for (var i = 0; i < db_usuarios.usuarios.length; i++) {
         var usuario = db_usuarios.usuarios[i];
                 
-        console.log("i: "+i);
         tabUser.innerHTML += `
             <tr>
                 <th scope="row">${i + 1}</th>
